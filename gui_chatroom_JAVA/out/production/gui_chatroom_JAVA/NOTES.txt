@@ -1,0 +1,55 @@
+
+https://docs.oracle.com/javase/7/docs/api/overview-summary.html
+https://www.geeksforgeeks.org/dataoutputstream-in-java/
+https://docs.oracle.com/javase/7/docs/api/java/io/package-summary.html
+https://www.tutorialspoint.com/awt/awt_action_event.htm
+https://docs.oracle.com/javase/8/docs/api/java/net/package-summary.html
+https://www.geeksforgeeks.org/final-keyword-in-java/
+
+https://docs.oracle.com/javase/7/docs/api/javax/swing/SwingUtilities.html
+
+/*
+   SwingUtilities.invokeLater(
+   --> ASYNCRHONIS EVENT HANDLER
+   * As other answers have said, it executes your Runnable on the AWT event-dispatching thread. But why would you want to do that?
+   * Because the Swing data structures aren't thread-safe, so to provide programmers with an easily-achievable way of preventing concurrent access to them, the Swing designers laid down the rule that all code that accesses them must run on the same thread. That
+
+*/
+
+/*
+    * final keyword is used in different contexts. First of all, final is a non-access modifier applicable only to a variable, a method or a class.
+    * Following are different contexts where final is used.
+    * When a variable is declared with final keyword, its value can’t be modified, essentially, a constant. T
+
+
+    final int THRESHOLD = 5;
+    static final double PI; --> shares var at class level (static = global)
+
+
+
+*/
+
+
+
+/*          -[OUTPUT/INPUT PICKLE]--
+ * The ObjectOutputStream class of the java.io package can be used to write objects that can be read by ObjectInputStream.
+ * --> SIMILAR TO PICKLE IN PYTHON
+ * .flush() clearns buffer stream-->wait for the content of the stream to be completely transferred to its destination,
+ *  and then resume execution with the stream empty and the content sent.
+ * IOException & EOFException Exception --> try/catch IO handling.
+ * input.readObject() --> [input pickle] readObject() method read an object from the ObjectInputStream.
+ * .writeObject();--> creates object and sends to output stream
+ */
+
+/*
+                   -- [ServerSocket()] --
+        * Creates an unbound server socket.
+        * ServerSocket(int port)
+        * Creates a server socket, bound to the specified port.
+        * ServerSocket(int port, int backlog)
+        * Creates a server socket and binds it to the specified local port number, with the specified backlog.
+        * ServerSocket(int port, int backlog, InetAddress bindAddr)
+        * Create a server with the specified port, listen backlog, and local IP address to bind to.
+        * DO NOT FORGET TO --> .flush() ;
+*/
+
